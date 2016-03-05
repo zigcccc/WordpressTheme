@@ -1,0 +1,275 @@
+/*
+Theme Name: CustomWPtheme
+Theme URI: http://www.zigakrasovec.ga/theme
+Description: Simple Responsive WP theme
+Version: 1
+Author: Ziga Krasovec
+Author URI: http://www.zigakrasovec.ga
+*/
+
+@import "mixins.scss";
+@import "animations.scss";
+
+$main-color: #2c3e50;
+$main-hover-color: #405267;
+$font-color: #ecf0f1;
+$drop-shadow: rgba(0, 0, 0, .6);
+
+
+/* OVERRIDE BOOTSTRAP DEFAULT STYLES */
+.btn-success {
+  background-image: none;
+  background-color: $main-color;
+  border: none;
+  padding: 10px 15px;
+  &:hover {
+    background-color: $main-hover-color;
+  }
+  &:active:focus {
+    background-color: $main-hover-color;
+  }
+  &:focus {
+    background-color: $main-hover-color;
+  }
+  &:active {
+    background-color: $main-hover-color;
+  }  
+  &:visited {
+    background-color: $main-hover-color;
+  }
+}
+
+
+
+
+/* HEADER STYLES */
+
+header {
+  background-color: $main-color;
+  .container {
+    min-height: 60px;
+  }
+  #logo-image {
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+    @include transition(300ms, ease, all);
+    &:hover {
+      @include filter-dropshadow(0, 0, 15px, $drop-shadow);
+    }
+  }
+  p {
+    line-height: 60px;
+    font-size: 1.5em;
+    text-align: left;
+    color: $font-color;
+  }
+  nav {
+    ul {
+      margin-top: 25px;
+      li {
+        display: inline-block;
+        font-size: 1.2em;
+        min-width: 100px;
+        text-align: center;
+        a {
+          color: $font-color;
+          transition: all 300ms ease;
+          &:hover {
+            font-weight: bold;
+            color: $font-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* JUMBOTRON STYLE */
+#main-jt {
+  min-height: 400px;
+  height: 80vh;
+  background-image: url(../img/jt-background);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  h1 {
+    text-align: center;
+    margin-top: 100px;
+  }
+  button {
+    display: block;
+    margin: 50px auto 0;
+  }
+  span {
+    font-size: 3em;
+    color: $main-color;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 15%;
+    animation: bounce 2s infinite;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.jt-lvl2 {
+  height: 30vh;
+  h2 {
+    text-align: center;
+    font-size: 3.5em;
+    color: $font-color;
+    @include text-shadow(0, 0, 20px, $drop-shadow);
+    margin-top: 30px;
+  }
+}
+
+#jt-2 {
+  background-image: url(../img/jt-2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* SECTION STYLES */
+section {
+  padding-bottom: 35px;
+  padding-top: 35px;
+  article{
+    width: auto;
+    height: auto;
+    span.glyphicon {
+      font-size: 2em;
+      color: $main-color;
+      background-color: #ecf0f1;
+      display: block;
+      margin: -40px auto 0;
+      text-align: center;
+      line-height: 55px;
+      width: 70px;
+      height: 70px;
+      @include border-radius(50%);
+    }
+    &.standard-article {
+      border-top: 8px solid #d35400;
+      border-bottom: 8px solid #d35400;
+      span.glyphicon {
+        border: 8px solid #d35400;
+      }
+    }
+    &.aside-article {
+      border-top: 8px solid #2ecc71;
+      border-bottom: 8px solid #2ecc71;
+      span.glyphicon {
+        border: 8px solid #2ecc71;
+      }
+    }
+    &.image-article {
+      border-top: 8px solid #2980b9;
+      border-bottom: 8px solid #2980b9;
+      span.glyphicon {
+        border: 8px solid #2980b9;
+      }
+    }
+    &.recipe-article {
+      border-top: 8px solid #c0392b;
+      border-bottom: 8px solid #c0392b;
+      span.glyphicon {
+        border: 8px solid #c0392b;
+      }
+    }
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3em;
+    }
+    small {
+      text-align: center;
+      font-style: italic;
+      display: block;
+      margin: 0 auto;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline;
+          text-decoration: none;
+          a {
+            color: #ccc;
+          }
+        }
+      }
+      span.content-author {
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+    p {
+      text-align: justify;
+    }
+    .thumbnail-image {
+      width: 100%;
+      height: 40vh;
+      overflow: hidden;
+      margin-top: -30px;
+      img {
+        width: 100%;
+        z-index: -1;
+        position: relative;
+        height: auto;
+        margin-top: -20vh;
+      }
+    }
+  }
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: $main-color;
+  min-height: 30vh;
+  @include box-shadow(0, 3px, 2px, 2px, $drop-shadow, inset);
+  p {
+    text-align: center;
+    color: $font-color;
+    font-size: 1.3em;
+    margin-top: 12vh;
+    span {
+      font-size: 2em;
+      color: $font-color;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      margin-top: 5%;
+      animation: bounce 2s infinite;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

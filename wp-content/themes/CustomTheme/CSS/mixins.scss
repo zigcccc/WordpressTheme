@@ -1,0 +1,48 @@
+/* Mixins */
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color, $position) {
+	-webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
+	-moz-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
+	-ms-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
+	-o-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
+	box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
+}
+
+@mixin border-radius($amount) {
+	-webkit-border-radius: $amount;
+	-moz-border-radius: $amount;
+	-ms-border-radius: $amount;
+	-o-border-radius: $amount;
+	border-radius: $amount;
+}
+
+@mixin transition($time, $ease, $type) {
+	-webkit-transition: $time, $ease, $type;
+	-moz-transition: $time, $ease, $type;
+	-ms-transition: $time, $ease, $type;
+	-o-transition: $time, $ease, $type;
+	transition: $time, $ease, $type;
+}
+
+@mixin filter-dropshadow($h-shadow, $v-shadow, $blur, $color){
+  -webkit-filter: drop-shadow($h-shadow $v-shadow $blur $color);
+  -moz-filter: drop-shadow($h-shadow $v-shadow $blur $color);
+  -ms-filter: drop-shadow($h-shadow $v-shadow $blur $color);
+  -o-filter: drop-shadow($h-shadow $v-shadow $blur $color);
+  filter: drop-shadow($h-shadow $v-shadow $blur $color);
+}
+
+@mixin translateY($value){
+  -webkit-transform: translateY($value);
+  -moz-transform: translateY($value);
+  -ms-transform: translateY($value);
+  -o-transform: translateY($value);
+  transform: translateY($value);
+}
+
+@mixin text-shadow($v-shadow, $h-shadow, $blur, $color){
+  -webkit-text-shadow: $v-shadow $h-shadow $blur $color;
+  -moz-text-shadow: $v-shadow $h-shadow $blur $color;
+  -ms-text-shadow: $v-shadow $h-shadow $blur $color;
+  -o-text-shadow: $v-shadow $h-shadow $blur $color;
+  text-shadow: $v-shadow $h-shadow $blur $color;
+}
