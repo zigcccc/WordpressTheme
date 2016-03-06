@@ -1,6 +1,6 @@
 <section class="container">
-  <article class="standard-article">
-    <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+  <article class="glavna-jed-article">
+    <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
     <div class="row">
       <div class="col-sm-12">
         <div class="thumbnail-image">

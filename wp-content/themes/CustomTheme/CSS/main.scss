@@ -109,7 +109,7 @@ header {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    margin-top: 15%;
+    margin-top: 30vh;
     animation: bounce 2s infinite;
     &:hover {
       cursor: pointer;
@@ -124,7 +124,7 @@ header {
     font-size: 3.5em;
     color: $font-color;
     @include text-shadow(0, 0, 20px, $drop-shadow);
-    margin-top: 30px;
+    margin-top: 5vh;
   }
 }
 
@@ -144,7 +144,6 @@ section {
     height: auto;
     span.glyphicon {
       font-size: 2em;
-      color: $main-color;
       background-color: #ecf0f1;
       display: block;
       margin: -40px auto 0;
@@ -158,28 +157,32 @@ section {
       border-top: 8px solid #d35400;
       border-bottom: 8px solid #d35400;
       span.glyphicon {
+        color: #d35400;
         border: 8px solid #d35400;
       }
     }
-    &.aside-article {
+    &.glavna-jed-article {
       border-top: 8px solid #2ecc71;
       border-bottom: 8px solid #2ecc71;
       span.glyphicon {
+        color: #2ecc71;
         border: 8px solid #2ecc71;
       }
     }
-    &.image-article {
+    &.sladica-article {
       border-top: 8px solid #2980b9;
       border-bottom: 8px solid #2980b9;
       span.glyphicon {
+        color: #2980b9;
         border: 8px solid #2980b9;
       }
     }
-    &.recipe-article {
-      border-top: 8px solid #c0392b;
-      border-bottom: 8px solid #c0392b;
+    &.prigrizek-article {
+      border-top: 8px solid #f1c40f;
+      border-bottom: 8px solid #f1c40f;
       span.glyphicon {
-        border: 8px solid #c0392b;
+        border: 8px solid #f1c40f;
+        color: #f1c40f;
       }
     }
     h2 {
@@ -198,8 +201,15 @@ section {
         li {
           display: inline;
           text-decoration: none;
+          border-right: 1px solid #ccc;
+          padding-right: 5px;
+          &:last-child {
+            border-right: none;
+            padding-right: 0;
+          }
           a {
             color: #ccc;
+            font-style: normal;
           }
         }
       }

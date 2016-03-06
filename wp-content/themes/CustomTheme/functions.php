@@ -74,5 +74,135 @@ add_action('admin_head', 'live_rename_formats');
 
 
 
+/* CUSTOM POST TYPES */
+add_action( 'init', 'custom_post_type_creator' );
+/**
+ * Register a post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function custom_post_type_creator() {
+	$labels = array(
+		'name'               => _x( 'Sladice', 'post type general name'),
+		'singular_name'      => _x( 'Sladica', 'post type singular name'),
+		'menu_name'          => _x( 'Sladice', 'admin menu'),
+		'name_admin_bar'     => _x( 'Sladica', 'add new on admin bar'),
+		'add_new'            => _x( 'Dodaj novo', 'Sladica'),
+		'add_new_item'       => __( 'Dodaj novo Sladico'),
+		'new_item'           => __( 'Nova Sladica'),
+		'edit_item'          => __( 'Uredi Sladico'),
+		'view_item'          => __( 'Poglej Sladico'),
+		'all_items'          => __( 'Vse Sladice'),
+		'search_items'       => __( 'Najdi Sladico'),
+		'not_found'          => __( 'Nobena sladica ne ustreza iskanju.'),
+		'not_found_in_trash' => __( 'Nobena sladica se ne nehaja v smetnjaku.')
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'taxonomies'         => array( 'category' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => true,
+		'menu_position'      => 5,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+	);
+
+	register_post_type( 'sladica', $args );
+
+	$labels = array(
+		'name'               => _x( 'Glavne Jedi', 'post type general name'),
+		'singular_name'      => _x( 'Glavna Jed', 'post type singular name'),
+		'menu_name'          => _x( 'Glavne Jedi', 'admin menu'),
+		'name_admin_bar'     => _x( 'Glavna Jed', 'add new on admin bar'),
+		'add_new'            => _x( 'Dodaj novo', 'Glavna Jed'),
+		'add_new_item'       => __( 'Dodaj novo Glavno Jed'),
+		'new_item'           => __( 'Nova Glavna Jed'),
+		'edit_item'          => __( 'Uredi Glavno Jed'),
+		'view_item'          => __( 'Poglej Glavna Jed'),
+		'all_items'          => __( 'Vse Glavne Jedi'),
+		'search_items'       => __( 'Najdi Glavno Jed'),
+		'not_found'          => __( 'Nobena glavna jed ne ustreza iskanju.'),
+		'not_found_in_trash' => __( 'Nobena glavna jed se ne nehaja v smetnjaku.')
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'taxonomies'         => array( 'category' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => true,
+		'menu_position'      => 5,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+	);
+
+	register_post_type( 'glavna_jed', $args );
+
+		$labels = array(
+		'name'               => _x( 'Prigrizki', 'post type general name'),
+		'singular_name'      => _x( 'Prigrizek', 'post type singular name'),
+		'menu_name'          => _x( 'Prigrizki', 'admin menu'),
+		'name_admin_bar'     => _x( 'Prigrizek', 'add new on admin bar'),
+		'add_new'            => _x( 'Dodaj novo', 'Prigrizek'),
+		'add_new_item'       => __( 'Dodaj nov Prigrizek'),
+		'new_item'           => __( 'Nov Prigrizek'),
+		'edit_item'          => __( 'Uredi Prigrizek'),
+		'view_item'          => __( 'Poglej Prigrizek'),
+		'all_items'          => __( 'Vsi Prigrizki'),
+		'search_items'       => __( 'Najdi Prigrizek'),
+		'not_found'          => __( 'Noben prigrizek ne ustreza iskanju.'),
+		'not_found_in_trash' => __( 'Noben prigrizek se ne nehaja v smetnjaku.')
+	);
+
+	$args = array(
+		'labels'             => $labels,
+        'taxonomies'         => array( 'category' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => true,
+		'menu_position'      => 5,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+	);
+
+	register_post_type( 'prigrizek', $args );
+
+}
+
+
+
+
+// Show posts of 'post', 'page' and 'movie' post types on home page
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function add_my_post_types_to_query( $query ) {
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'post', 'sladica', 'glavna_jed', 'prigrizek' ) );
+  return $query;
+}
+
+
+
+
+
+
+
+
+
+
 
 ?>
