@@ -157,6 +157,10 @@ header {
       position: absolute;
       left: 0;
       top: 0;
+      @include transition(500ms, ease, all);
+      &:hover {
+        background-color: rgba(0, 0, 0, .2);
+      }
       h2 {
         display: block;
         margin: 5vw auto 0;
@@ -392,6 +396,38 @@ section {
       height: 40vh;
       overflow: hidden;
       margin-top: -30px;
+      @include transition(200ms, ease, filter);
+      &:hover {
+        @include grayscale(50%);
+        .post-image-link {
+          span {
+            display: block;
+          }
+        }
+      }
+      .post-image-link {
+        position: absolute;
+        top: 150px;
+        left: 47%;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        span {
+          display: none;
+          background: none;
+          border: none;
+          color: $font-color;
+          font-size: 5em;
+          margin: 0 auto;
+          @include transition(300ms, ease, all);
+          &:hover {
+            text-decoration: none;
+            color: #bac5c7;
+          }
+        }
+      }
       img {
         width: 100%;
         position: relative;

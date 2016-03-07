@@ -3,6 +3,9 @@
     <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
     
     <div class="post-image">
+      <div class="post-image-link">
+        <a href="<?php echo $post->post-name; ?>"><span class="glyphicon glyphicon-forward"></span></a>
+      </div>
       <?php the_post_thumbnail('large');?>
     </div>
     

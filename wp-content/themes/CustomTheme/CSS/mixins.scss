@@ -54,3 +54,11 @@
   -o-filter: blur($amount);
   filter: blur($amount);
 }
+
+@mixin grayscale($amount){
+  -webkit-filter: grayscale($amount);
+  -moz-filter: grayscale($amount);
+  -ms-filter: grayscale($amount);
+  -o-filter: grayscale($amount);
+  filter: grayscale($amount);
+}

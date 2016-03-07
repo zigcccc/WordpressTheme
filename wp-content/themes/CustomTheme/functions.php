@@ -54,6 +54,22 @@ function add_my_post_types_to_query( $query ) {
 
 
 
+/* GET THE SLUG */
+function get_the_slug() {
+
+global $post;
+
+if ( is_single() || is_page() ) {
+  return $post->post_name;
+  }
+  else {
+  return "";
+}
+
+}
+
+
+
 
 
 
