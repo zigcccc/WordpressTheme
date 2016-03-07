@@ -12,6 +12,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#back-to-top").on("click", function(){
-    $(document).scrollTo(document.getElementById('logo'), 800);
+    $(document).scrollTo(document.getElementById('top'), 800);
   })
 })

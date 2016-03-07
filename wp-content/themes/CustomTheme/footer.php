@@ -9,6 +9,7 @@
         </div><!-- END row -->
       </div><!-- END container -->
     </footer><!-- END footer -->
+    <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/JS/jquery.min.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>

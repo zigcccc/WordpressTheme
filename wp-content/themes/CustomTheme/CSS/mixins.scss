@@ -46,3 +46,11 @@
   -o-text-shadow: $v-shadow $h-shadow $blur $color;
   text-shadow: $v-shadow $h-shadow $blur $color;
 }
+
+@mixin blur($amount){
+  -webkit-filter: blur($amount);
+  -moz-filter: blur($amount);
+  -ms-filter: blur($amount);
+  -o-filter: blur($amount);
+  filter: blur($amount);
+}

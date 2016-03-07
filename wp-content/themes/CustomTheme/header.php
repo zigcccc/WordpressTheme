@@ -5,6 +5,7 @@
     <title>Custom Wordpress Theme</title>
     <!-- Viewport Settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
   </head>
   
@@ -17,20 +18,20 @@
       
   ?>
   
-  <body <?php body_class($custom_classes); ?>>
+  <body <?php body_class($custom_classes); ?> id="top">
      <header>
       <div class="container">
         <div class="row">
-          <div id="logo" class="col-sm-1">
-            <a href="#">
+          <div id="logo" class="col-xs-12 col-sm-1">
+            <a href="/wordpress/">
               <img src="<?php echo get_template_directory_uri().'/img/logo.svg'?>" id="logo-image">
             </a>
           </div><!-- END logo -->
-          <p class="col-sm-3">
+          <p class="col-xs-12 col-sm-3">
             Žiga Krašovec
           </p><!-- END header paragraph -->
-          <nav id="main-nav" class="col-sm-8">
-            <ul class="text-right">
+          <nav id="main-nav" class="col-xs-12 col-sm-8">
+            <ul>
               <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
             </ul>
           </nav><!-- END main nav -->
