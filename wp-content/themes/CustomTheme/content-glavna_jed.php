@@ -1,10 +1,10 @@
 
-  <article class="glavna-jed-article">
+  <article id="post-<?php the_ID(); ?>" class="glavna-jed-article">
     <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
     
     <div class="post-image">
       <div class="post-image-link">
-        <a href="<?php echo $post->post-name; ?>"><span class="glyphicon glyphicon-forward"></span></a>
+        <a href="/wordpress/<?php echo(basename(get_permalink())); ?>"><span class="glyphicon glyphicon-forward"></span></a>
       </div>
       <?php the_post_thumbnail('large');?>
     </div>

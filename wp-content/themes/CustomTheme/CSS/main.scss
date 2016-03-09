@@ -44,10 +44,23 @@ p {
   padding: 10px 0;
 }
 
+h2{
+  small{
+    color: $font-color;
+  }
+}
+
 .thirdOfPage {
   display: block;
   float: left;
   width: 33.33333333%;
+  height: auto;
+}
+
+.halfOfPage {
+  display: block;
+  float: left;
+  width: 50%;
   height: auto;
 }
 
@@ -136,7 +149,9 @@ header {
 /* JUMBOTRON STYLE */
 #main-jt {
 //  min-height: 400px;
-  height: auto;
+  height: 22vw;
+  padding-bottom: 0;
+  margin-bottom: 0;
   //background-image: url(../img/jt-background.jpeg);
   //background-repeat: no-repeat;
   //background-position: center center;
@@ -144,6 +159,8 @@ header {
   .thirdOfPage {
     margin-top: -50px;
     .thumbnail-image{
+      margin: 0;
+      padding: 0;
       height: 22vw;
       overflow: hidden;
       position: relative;
@@ -168,11 +185,13 @@ header {
         text-transform: uppercase;
         padding: 0 5px;
         font-size: 1.5em;
+        @include text-shadow(0, 0, 5px, $drop-shadow);
       }
       h4 {
         display: block;
         margin: 5px auto;
         text-align: center;
+        @include text-shadow(0, 0, 5px, $drop-shadow);
       }
       a {
         color: $font-color;
@@ -222,6 +241,38 @@ header {
     }
   }
 }
+
+
+#jt-featured {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin-top: -2px;
+  overflow: hidden;
+  .jt-image {
+    height: 22vw;
+//    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include grayscale(75%);
+    &:hover {
+      @include grayscale(0);
+    }
+  }
+  h2 {
+        color: $font-color;
+        display: block;
+        margin: 0 auto 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 5px;
+        font-size: 2em;
+        background-color: $drop-shadow;
+        @include text-shadow(0, 0, 15px, rgba(0, 0, 0, .8));
+      }
+}
+
 
 .jt-lvl2 {
   height: 30vh;
@@ -396,12 +447,13 @@ section {
       height: 40vh;
       overflow: hidden;
       margin-top: -30px;
-      @include transition(200ms, ease, filter);
+      @include transition(200ms, ease, all);
       &:hover {
-        @include grayscale(50%);
+        @include grayscale(70%);
         .post-image-link {
           span {
-            display: block;
+            @include opacity(100%);
+            @include filter-dropshadow(0, 0, 5px, $drop-shadow);
           }
         }
       }
@@ -409,13 +461,15 @@ section {
         position: absolute;
         top: 150px;
         left: 47%;
+        @include transition(300ms, ease, all);
         a {
           &:hover {
             text-decoration: none;
           }
         }
         span {
-          display: none;
+          display: block;
+          @include opacity(0);
           background: none;
           border: none;
           color: $font-color;

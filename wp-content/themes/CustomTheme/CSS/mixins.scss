@@ -1,4 +1,12 @@
 /* Mixins */
+@mixin opacity($amount) {
+  -webkit-filter: opacity($amount);
+  -moz-filter: opacity($amount);
+  -ms-filter: opacity($amount);
+  -o-filter: opacity($amount);
+  filter: opacity($amount);
+}
+
 @mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color, $position) {
 	-webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;
 	-moz-box-shadow: $h-shadow $v-shadow $blur $spread $color $position;

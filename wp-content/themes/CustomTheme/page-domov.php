@@ -1,33 +1,82 @@
 <?php get_header(); ?>
 
  <div class="jumbotron" id="main-jt">
-    <?php 
-        $args = array('post-type' => 'post', 'posts_per_page' => 3);
-        $loop = new WP_Query($args);
-           
-        if($loop->have_posts()):
-          while($loop->have_posts()): $loop->the_post(); ?>
-            <div class="thirdOfPage">
-              <div class="thumbnail-image">
-                <?php the_post_thumbnail('large');?>
-                <span>
-                  <h2><?php the_title(); ?></h2>
-                  <h4><?php print get_the_category()[0]->name; ?></h4>
-                  <a href="<?php the_permalink(); ?>">Preberi več</a>
-                </span>
-              </div>
-            </div>
-        <?php endwhile;
-        endif; 
-          
-        wp_reset_postdata();
+    <?php
+        $args_cat = array(
+          'include' => '11, 14, 15',
+        );
    
+        $categories = get_categories($args_cat); 
+        foreach($categories as $category):
+          $args = array(
+            'post-type' => 'post',
+            'posts_per_page' => 1,
+            'tag' => 'recept',
+            'category__in' => $category->term_id, 
+          );
+          $loop = new WP_Query($args);
+
+          if($loop->have_posts()):
+            while($loop->have_posts()): $loop->the_post(); ?>
+              <div class="thirdOfPage">
+                <div class="thumbnail-image">
+                  <?php the_post_thumbnail('large');?>
+                  <span>
+                    <h2><?php the_title(); ?></h2>
+                    <h4><?php print get_the_category()[0]->name; ?></h4>
+                    <a href="<?php the_permalink(); ?>">Preberi več</a>
+                  </span>
+                </div>
+              </div>
+          <?php endwhile;
+          endif; 
+
+          wp_reset_postdata();
+        endforeach;
     ?>
 </div><!-- END jumbotron -->
+<div class="jumbotron" id="jt-featured">
+  
+  <?php
+  
+  $args_cat = array(
+    'include' => '17, 18',
+  );
+  
+  $categories = get_categories($args_cat);
+  
+  foreach($categories as $category):
+  $args = array(
+    'post-type' => 'post',
+    'post-per-page' => 1,
+    'tag' => 'pomembno',
+    'category__in' => $category->term_id,
+  );
+  
+  $loop = new WP_Query($args);
+  
+  if($loop->have_posts()):
+    while($loop->have_posts()):
+      $loop->the_post(); ?>
+      
+          <a href="<?php the_permalink(); ?>">
+          <div class="jt-image halfOfPage" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>">
+            <h2><small>Zadnje iz <?php echo get_the_category()[0]->slug; ?>:</small><br> <?php the_title(); ?></h2>
+          </div>
+          </a>
+        
+        
+  
+  <?php  endwhile;
+      endif;
+    wp_reset_postdata();
+  endforeach; ?>
+  
+  
+</div>
 
 <section class="container" id="firstSection">
-  <h2>Na kratko o meni</h2>
-  <hr>
+  <h2 class="page-header">Na kratko o meni</h2>
   <div class="row">
     <img src="<?php echo get_template_directory_uri().'/img/avatar.jpg';?>" class="img-circle col-xs-4 col-xs-offset-4 col-sm-offset-0 col-sm-3">
     <p class="col-xs-12 col-sm-9">Gentrify seitan selfies, kickstarter everyday carry photo booth twee thundercats food truck actually meggings heirloom put a bird on it godard. Narwhal cold-pressed keffiyeh green juice skateboard. You probably haven't heard of them echo park aesthetic ramps. Direct trade kogi YOLO, blog leggings literally kale chips disrupt typewriter mustache mumblecore iPhone bespoke selvage. Godard lumbersexual cardigan asymmetrical. Occupy mixtape man bun typewriter plaid fashion axe flexitarian chartreuse brooklyn, pork belly wayfarers portland quinoa aesthetic. Roof party scenester neutra small batch, kombucha tofu yr mumblecore tote bag sustainable taxidermy.
@@ -41,8 +90,7 @@ Blog umami neutra, chartreuse pickled +1 blue bottle cronut lomo literally gastr
 </div>  
   
 <section class="container" id="secondSection">
-  <h2>S čim se ukvarjam</h2>
-  <hr>
+  <h2 class="page-header">S čim se ukvarjam</h2>
   <div class="row">
     <img src="<?php echo get_template_directory_uri().'/img/dejavnost.png';?>" class="img-circle col-xs-4 col-xs-offset-4 col-sm-3 col-sm-push-9 col-sm-offset-0">
     <p class="col-xs-12 col-sm-9 col-sm-pull-3">Gentrify seitan selfies, kickstarter everyday carry photo booth twee thundercats food truck actually meggings heirloom put a bird on it godard. Narwhal cold-pressed keffiyeh green juice skateboard. You probably haven't heard of them echo park aesthetic ramps. Direct trade kogi YOLO, blog leggings literally kale chips disrupt typewriter mustache mumblecore iPhone bespoke selvage. Godard lumbersexual cardigan asymmetrical. Occupy mixtape man bun typewriter plaid fashion axe flexitarian chartreuse brooklyn, pork belly wayfarers portland quinoa aesthetic. Roof party scenester neutra small batch, kombucha tofu yr mumblecore tote bag sustainable taxidermy.

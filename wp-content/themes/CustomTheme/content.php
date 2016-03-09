@@ -1,7 +1,10 @@
 
-  <article class="standard-article">
+  <article id="post-<?php the_ID(); ?>" class="standard-article">
     <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
     <div class="post-image">
+      <div class="post-image-link">
+        <a href="/wordpress/<?php echo(basename(get_permalink())); ?>"><span class="glyphicon glyphicon-forward"></span></a>
+      </div>
       <?php the_post_thumbnail('large');?>
     </div>
     <h2><?php the_title(); ?></h2>
