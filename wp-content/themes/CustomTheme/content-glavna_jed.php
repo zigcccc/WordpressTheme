@@ -1,17 +1,23 @@
 
   <article id="post-<?php the_ID(); ?>" class="glavna-jed-article">
     <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-    
-    <div class="post-image">
-      <div class="post-image-link">
-        <a href="/wordpress/<?php echo(basename(get_permalink())); ?>"><span class="glyphicon glyphicon-forward"></span></a>
+    <a href="/wordpress/<?php echo(basename(get_permalink())); ?>">
+      <div class="post-image-wrap">
+        <div class="post-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>">
+          <?php //the_post_thumbnail('large');?>
+        </div>
       </div>
-      <?php the_post_thumbnail('large');?>
+    </a>
+     <div class="post-title">
+      <h2><?php the_title(); ?></h2>
     </div>
-    
-    <h2><?php the_title(); ?></h2>
-    
     <small>Posted on: <?php the_time('j F Y')?> @ <?php the_time('G:i'); ?><br> Published By: <span class="content-author"><?php the_author(); ?></span><br><?php the_category(); ?></small>
-    
-    <div><p><?php the_content(); ?></p></div>
+    <div class="post-excerpt">
+      <?php the_excerpt(); ?>
+    </div>
+    <div class="post-read-more">
+      <a href="/wordpress/<?php echo(basename(get_permalink())); ?>">
+        Preberi več
+      </a>
+    </div>
   </article>

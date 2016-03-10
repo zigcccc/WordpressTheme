@@ -1,18 +1,20 @@
 <?php get_header(); ?>
 
 <section class="container">
+  <div class="row">
   <?php if(have_posts()): 
       while(have_posts()): the_post(); ?>
           <?php //echo get_the_category()[0]->slug; ?>
 
-           <div class="row">
-              <div class="col-xs-12 col-sm-9"><?php get_template_part('content', get_the_category()[0]->slug); ?></div>
-              <?php get_sidebar(); ?>
-            </div>
+           
+              <div class="col-xs-12 col-sm-6 col-lg-4"><?php get_template_part('content', get_the_category()[0]->slug); ?></div>
+              <?php //get_sidebar(); ?>
+            
 
       <?php endwhile;
     endif;
   ?>
+  </div>
 </section>
 
 

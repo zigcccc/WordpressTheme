@@ -50,6 +50,14 @@ function add_my_post_types_to_query( $query ) {
   return $query;
 }
 
+// LIMIT WORD COUNT
+function short_text(){
+  $excerpt = get_the_content();
+//  $excerpt = strip_shortcodes($excerpt);
+//  $excerpt = strip_tags($excerpt);
+  $the_str = substr($excerpt, 0, 50);
+  return $the_str;
+}
 
 
 
