@@ -1,10 +1,11 @@
-<?php 
+<?php
 
 function custom_script_enqueue() {
   wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', array(), '1.0.0', 'all');
   wp_enqueue_style('bootstrap-optional-theme', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', array(), '1.0.0', 'all');
-  wp_enqueue_style('customstyle', get_template_directory_uri().'/CSS/main.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('customstyle', get_template_directory_uri().'/CSS/main.min.css', array(), '1.0.0', 'all');
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', array(),'', false);
+  wp_enqueue_script('bootstrapJS', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array(), '', 'false');
   wp_enqueue_script('ScrollJS', get_template_directory_uri().'/JS/jquery.scrollTo.min.js', array(),'', true);
   wp_enqueue_script('customJS', get_template_directory_uri().'/JS/main-script.js', array(), '1.0.0', true);
 }

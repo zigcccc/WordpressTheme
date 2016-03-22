@@ -35,45 +35,6 @@
         endforeach;
     ?>
 </div><!-- END jumbotron -->
-<div class="jumbotron" id="jt-featured">
-  
-  <?php
-  
-  $args_cat = array(
-    'include' => '17, 18',
-  );
-  
-  $categories = get_categories($args_cat);
-  
-  foreach($categories as $category):
-  $args = array(
-    'post-type' => 'post',
-    'post-per-page' => 1,
-    'tag' => 'pomembno',
-    'category__in' => $category->term_id,
-  );
-  
-  $loop = new WP_Query($args);
-  
-  if($loop->have_posts()):
-    while($loop->have_posts()):
-      $loop->the_post(); ?>
-      
-          <a href="<?php the_permalink(); ?>">
-          <div class="jt-image halfOfPage" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>">
-            <h2><small>Zadnje iz <?php echo get_the_category()[0]->slug; ?>:</small><br> <?php the_title(); ?></h2>
-          </div>
-          </a>
-        
-        
-  
-  <?php  endwhile;
-      endif;
-    wp_reset_postdata();
-  endforeach; ?>
-  
-  
-</div>
 
 <section class="container" id="firstSection">
   <h2 class="page-header">Na kratko o meni</h2>
@@ -85,9 +46,81 @@ Blog umami neutra, chartreuse pickled +1 blue bottle cronut lomo literally gastr
   </div><!-- END row-->
 </section><!-- END firstSection -->
   
-<div class="jumbotron jt-lvl2" id="jt-2">
-  <h2>Moje dejavnosti</h2>
-</div>  
+<div class="jumbotron" id="jt-featured">
+  <div id="custom-slider" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+      <?php
+
+      $args_cat = array(
+        'include' => '17, 18',
+      );
+
+      $categories = get_categories($args_cat);
+
+      $count = 0;
+      $bullet ='';
+
+      foreach($categories as $category):
+
+      $args = array(
+        'post-type' => 'post',
+        'post-per-page' => 1,
+        'tag' => 'pomembno',
+        'category__in' => $category->term_id,
+      );
+
+      $loop = new WP_Query($args);
+
+      if($loop->have_posts()): 
+
+        while($loop->have_posts()):
+
+          $loop->the_post(); ?>
+
+            <div class="item <?php if($count == 0): echo 'active'; endif; ?>" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
+              <div class="carousel-caption">
+                <?php the_title(); ?>
+                <br>
+                <span><a href="<?php the_permalink(); ?>">Preberi več</a></span>
+              </div>
+            </div><!-- END item -->
+      
+            <?php $bullet .= '<li data-target="#custom-slider" data-slide-to="'. $count .'" class="'; ?>
+              <?php if($count == 0): $bullet .= 'active'; endif; ?>
+            <?php $bullet .= '"></li>'; ?>
+
+
+        <?php  endwhile;
+
+            endif;
+
+          wp_reset_postdata();
+
+        $count++;
+        endforeach; ?>
+
+    </div><!-- END carousel-inner -->
+    
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <?php echo $bullet ?>
+    </ol>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#custom-slider" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#custom-slider" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div><!-- END custom slider -->
+</div><!-- END Jumbotron Featured -->
   
 <section class="container" id="secondSection">
   <h2 class="page-header">S čim se ukvarjam</h2>

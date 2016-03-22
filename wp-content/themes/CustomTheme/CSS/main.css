@@ -34,39 +34,46 @@ Author URI: http://www.zigakrasovec.ga
   background-color: #2c3e50;
   border: none;
   padding: 10px 15px; }
-  /* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  .btn-success a {
+    color: #ecf0f1;
+    text-decoration: none; }
+    /* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    .btn-success a:hover {
+      text-decoration: none; }
+  /* line 32, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .btn-success:hover {
     background-color: #405267; }
-  /* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .btn-success:active:focus {
     background-color: #405267; }
-  /* line 31, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 38, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .btn-success:focus {
     background-color: #405267; }
-  /* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .btn-success:active {
     background-color: #405267; }
-  /* line 37, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 44, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .btn-success:visited {
     background-color: #405267; }
 
-/* line 42, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 49, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 p {
   text-align: justify;
   padding: 10px 0; }
 
-/* line 48, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 55, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 h2 small {
   color: #ecf0f1; }
 
-/* line 53, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 60, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 .thirdOfPage {
   display: block;
   float: left;
   width: 33.33333333%;
   height: auto; }
 
-/* line 60, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 67, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 .halfOfPage {
   display: block;
   float: left;
@@ -74,17 +81,17 @@ h2 small {
   height: auto; }
 
 /* HEADER STYLES */
-/* line 72, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 79, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 header {
   background-color: #2c3e50; }
-  /* line 74, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 81, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   header .container {
     height: 50px; }
     @media screen and (max-width: 768px) {
-      /* line 74, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 81, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       header .container {
         height: auto; } }
-  /* line 80, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 87, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   header #logo-image {
     height: 35px;
     width: auto;
@@ -95,91 +102,91 @@ header {
     -o-transition: 300ms, ease, all;
     transition: 300ms, ease, all; }
     @media screen and (max-width: 768px) {
-      /* line 80, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 87, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       header #logo-image {
         display: block;
         margin: 10px auto;
         height: 15vh; } }
-    /* line 90, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 97, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     header #logo-image:hover {
       -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
       -moz-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
       -ms-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
       -o-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
       filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6)); }
-  /* line 94, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 101, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   header p {
     margin-top: 0px;
     font-size: 1.5em;
     text-align: left;
     color: #ecf0f1; }
     @media screen and (max-width: 768px) {
-      /* line 94, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 101, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       header p {
         text-align: center;
         margin-top: 0; } }
-  /* line 105, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 112, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   header nav ul {
     margin-top: 7px;
     float: right; }
     @media screen and (max-width: 768px) {
-      /* line 105, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 112, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       header nav ul {
         display: block;
         margin: 0 auto;
         padding: 0;
         float: none; } }
-    /* line 114, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 121, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     header nav ul li {
       display: inline-block;
       font-size: 1.2em;
       min-width: 100px;
       text-align: center; }
       @media screen and (max-width: 992px) {
-        /* line 114, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 121, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         header nav ul li {
           min-width: 80px; } }
       @media screen and (max-width: 768px) {
-        /* line 114, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 121, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         header nav ul li {
           min-width: 0;
           text-align: center;
           display: block;
           margin: 10px auto 0;
           padding: 0; }
-          /* line 127, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 134, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           header nav ul li:first-child {
             margin: 0 auto; }
-          /* line 130, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 137, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           header nav ul li:last-child {
             margin: 10px auto 10px; } }
-      /* line 135, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 142, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       header nav ul li a {
         color: #ecf0f1;
         transition: all 300ms ease; }
-        /* line 138, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 145, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         header nav ul li a:hover {
           font-weight: bold;
           color: #ecf0f1;
           text-decoration: none; }
 
 /* JUMBOTRON STYLE */
-/* line 150, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 157, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 #main-jt {
   height: 22vw;
   padding-bottom: 0;
   margin-bottom: 0; }
-  /* line 159, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 166, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   #main-jt .thirdOfPage {
     margin-top: -50px; }
-    /* line 161, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 168, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     #main-jt .thirdOfPage .thumbnail-image {
       margin: 0;
       padding: 0;
       height: 22vw;
       overflow: hidden;
       position: relative; }
-      /* line 167, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 174, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       #main-jt .thirdOfPage .thumbnail-image span {
         display: block;
         z-index: 100;
@@ -195,10 +202,10 @@ header {
         -ms-transition: 500ms, ease, all;
         -o-transition: 500ms, ease, all;
         transition: 500ms, ease, all; }
-        /* line 178, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 185, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         #main-jt .thirdOfPage .thumbnail-image span:hover {
           background-color: rgba(0, 0, 0, 0.2); }
-        /* line 181, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 188, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         #main-jt .thirdOfPage .thumbnail-image span h2 {
           display: block;
           margin: 5vw auto 0;
@@ -211,7 +218,7 @@ header {
           -ms-text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
           -o-text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
           text-shadow: 0 0 5px rgba(0, 0, 0, 0.6); }
-        /* line 190, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 197, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         #main-jt .thirdOfPage .thumbnail-image span h4 {
           display: block;
           margin: 5px auto;
@@ -221,7 +228,7 @@ header {
           -ms-text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
           -o-text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
           text-shadow: 0 0 5px rgba(0, 0, 0, 0.6); }
-        /* line 196, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 203, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         #main-jt .thirdOfPage .thumbnail-image span a {
           color: #ecf0f1;
           text-align: center;
@@ -240,24 +247,24 @@ header {
           -ms-border-radius: 5px;
           -o-border-radius: 5px;
           border-radius: 5px; }
-          /* line 206, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 213, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           #main-jt .thirdOfPage .thumbnail-image span a:hover {
             background-color: #ecf0f1;
             color: #222;
             text-decoration: none; }
-      /* line 213, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 220, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       #main-jt .thirdOfPage .thumbnail-image img {
         max-width: 100%;
         height: auto; }
-  /* line 222, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 229, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   #main-jt h1 {
     text-align: center;
     margin-top: 100px; }
-  /* line 226, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 233, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   #main-jt button {
     display: block;
     margin: 50px auto 0; }
-  /* line 230, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 237, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   #main-jt span#show-content {
     font-size: 3em;
     color: #2c3e50;
@@ -267,56 +274,70 @@ header {
     position: relative;
     margin-top: 30vh;
     animation: bounce 2s infinite; }
-    /* line 239, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 246, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     #main-jt span#show-content:hover {
       cursor: pointer; }
 
-/* line 246, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 253, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 #jt-featured {
-  height: auto;
+  height: 22vw;
   padding: 0;
   margin: 0;
   margin-top: -2px;
-  overflow: hidden; }
-  /* line 252, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
-  #jt-featured .jt-image {
+  overflow: hidden;
+  clear: both; }
+  /* line 260, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  #jt-featured .item {
     height: 22vw;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-filter: grayscale(75%);
-    -moz-filter: grayscale(75%);
-    -ms-filter: grayscale(75%);
-    -o-filter: grayscale(75%);
-    filter: grayscale(75%); }
-    /* line 259, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
-    #jt-featured .jt-image:hover {
-      -webkit-filter: grayscale(0);
-      -moz-filter: grayscale(0);
-      -ms-filter: grayscale(0);
-      -o-filter: grayscale(0);
-      filter: grayscale(0); }
-  /* line 263, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
-  #jt-featured h2 {
-    color: #ecf0f1;
-    display: block;
-    margin: 0 auto 0;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0 5px;
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.6);
-    -webkit-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    -moz-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    -ms-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    -o-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8); }
+    background-repeat: no-repeat; }
+    /* line 266, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    #jt-featured .item .carousel-caption {
+      margin: 0 auto;
+      font-size: 4em;
+      display: block;
+      text-align: center;
+      -webkit-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      -moz-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      -ms-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      -o-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.6); }
+      /* line 274, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      #jt-featured .item .carousel-caption span a {
+        font-size: 1.5rem;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 10px 20px;
+        width: auto;
+        margin: 30px auto 0;
+        border: 2px solid #ecf0f1;
+        -webkit-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        -moz-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        -ms-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        -o-text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        -webkit-transition: 500ms, ease, all;
+        -moz-transition: 500ms, ease, all;
+        -ms-transition: 500ms, ease, all;
+        -o-transition: 500ms, ease, all;
+        transition: 500ms, ease, all;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px; }
+        /* line 286, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        #jt-featured .item .carousel-caption span a:hover {
+          background-color: #ecf0f1;
+          color: #222;
+          text-decoration: none; }
 
-/* line 277, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 300, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 .jt-lvl2 {
   height: 30vh;
   margin-top: 20px; }
-  /* line 280, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 303, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   .jt-lvl2 h2 {
     text-align: center;
     font-size: 3.5em;
@@ -328,7 +349,7 @@ header {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     margin-top: 5vh; }
 
-/* line 289, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 312, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 #jt-2 {
   background-image: url(../img/jt-2.png);
   background-size: cover;
@@ -336,24 +357,25 @@ header {
   background-repeat: no-repeat; }
 
 /* SECTION STYLES */
-/* line 297, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 320, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 section {
-  clear: both; }
-  /* line 299, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  clear: both;
+  margin-bottom: 20px; }
+  /* line 323, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   section #sidebar {
     position: fixed;
     right: 10px; }
     @media screen and (max-width: 768px) {
-      /* line 299, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 323, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section #sidebar {
         display: none; } }
-    /* line 306, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 330, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section #sidebar aside:first-child {
       padding-top: 35px; }
-    /* line 309, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 333, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section #sidebar aside label {
       display: none; }
-    /* line 312, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 336, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section #sidebar aside input[type="submit"] {
       background-color: #2c3e50;
       color: #ecf0f1;
@@ -362,24 +384,24 @@ section {
       padding: 0.5vw 1vw;
       display: block;
       width: 80%; }
-    /* line 321, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 345, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section #sidebar aside input[type="text"] {
       padding: 0.5vw 1vw;
       display: block;
       width: 80%; }
-    /* line 326, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 350, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section #sidebar aside ul {
       display: block;
       width: 100%;
       margin: 0;
       padding: 0; }
-      /* line 331, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 355, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section #sidebar aside ul li {
         display: inline-block; }
-        /* line 333, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 357, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section #sidebar aside ul li a {
           color: #222; }
-        /* line 336, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 360, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section #sidebar aside ul li.cat-item {
           text-align: center;
           font-size: 0.8em;
@@ -391,28 +413,99 @@ section {
           -ms-border-radius: 10px;
           -o-border-radius: 10px;
           border-radius: 10px; }
-          /* line 343, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 367, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           section #sidebar aside ul li.cat-item::before {
             content: ""; }
-        /* line 347, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 371, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section #sidebar aside ul li::before {
           content: " | "; }
-        /* line 351, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 375, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section #sidebar aside ul li:first-child::before {
           content: ""; }
-  /* line 359, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 383, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   section article {
     background-color: #ecf0f1;
     margin-bottom: 35px;
     margin-top: 35px;
     width: auto;
     height: 600px; }
-    /* line 367, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 390, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    section article p {
+      padding: 5px 10px; }
+    /* line 394, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article .post-title h2 {
       text-align: center;
       text-transform: uppercase;
       font-size: 1.6em; }
-    /* line 375, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 401, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    section article.single-article {
+      height: auto;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 30px; }
+      /* line 406, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article h2 {
+        font-size: 3.5em;
+        line-height: 20vw;
+        color: #ecf0f1;
+        -webkit-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        -moz-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        -ms-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        -o-text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.8); }
+      /* line 412, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article .avatar {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 3px solid #ecf0f1;
+        margin-top: 5px; }
+      /* line 417, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article .article-image-wrap {
+        height: 20vw;
+        margin-top: -18px;
+        padding-top: 0; }
+        /* line 421, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        section article.single-article .article-image-wrap .article-image {
+          width: 100%;
+          height: 20vw;
+          background-size: cover;
+          background-position: center center; }
+      /* line 428, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article .content {
+        padding-top: 10px; }
+        /* line 430, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        section article.single-article .content img {
+          display: block;
+          margin: 0 auto;
+          padding: 10px 10px; }
+      /* line 436, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px; }
+      /* line 442, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article .sestavina {
+        display: block; }
+      /* line 446, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      section article.single-article span.tezavnost {
+        -webkit-border-radius: none;
+        -moz-border-radius: none;
+        -ms-border-radius: none;
+        -o-border-radius: none;
+        border-radius: none;
+        display: inline-block;
+        background: none;
+        font-size: 1.4em;
+        margin: 0;
+        line-height: inherit;
+        width: auto;
+        height: auto;
+        text-align: center; }
+    /* line 460, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article .post-read-more a {
       padding: 8px 11px;
       color: #222;
@@ -432,10 +525,10 @@ section {
       -ms-transition: 300ms, ease, all;
       -o-transition: 300ms, ease, all;
       transition: 300ms, ease, all; }
-    /* line 389, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 474, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article .post-excerpt p {
       padding: 5px 10px; }
-    /* line 393, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 478, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article span.glyphicon {
       font-size: 2em;
       background-color: #ecf0f1;
@@ -451,112 +544,112 @@ section {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%; }
-    /* line 405, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 490, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article.standard-article {
       border-top: 8px solid #d35400;
       border-bottom: 8px solid #d35400; }
-      /* line 408, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 493, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.standard-article span.glyphicon {
         color: #d35400;
         border: 8px solid #d35400; }
-      /* line 413, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 498, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.standard-article .post-read-more a {
         border: 4px solid #d35400;
         color: #d35400; }
-        /* line 416, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 501, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article.standard-article .post-read-more a:hover {
           background-color: #d35400;
           color: #ecf0f1;
           text-decoration: none; }
-    /* line 424, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 509, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article.glavna-jed-article {
       border-top: 8px solid #2ecc71;
       border-bottom: 8px solid #2ecc71; }
-      /* line 427, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 512, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.glavna-jed-article span.glyphicon {
         color: #2ecc71;
         border: 8px solid #2ecc71; }
-      /* line 432, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 517, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.glavna-jed-article .post-read-more a {
         border: 4px solid #2ecc71;
         color: #2ecc71; }
-        /* line 435, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 520, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article.glavna-jed-article .post-read-more a:hover {
           background-color: #2ecc71;
           color: #ecf0f1;
           text-decoration: none; }
-    /* line 443, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 528, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article.sladica-article {
       border-top: 8px solid #2980b9;
       border-bottom: 8px solid #2980b9; }
-      /* line 446, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 531, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.sladica-article span.glyphicon {
         color: #2980b9;
         border: 8px solid #2980b9; }
-      /* line 451, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 536, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.sladica-article .post-read-more a {
         border: 4px solid #2980b9;
         color: #2980b9; }
-        /* line 454, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 539, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article.sladica-article .post-read-more a:hover {
           background-color: #2980b9;
           color: #ecf0f1;
           text-decoration: none; }
-    /* line 462, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 547, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article.prigrizek-article {
       border-top: 8px solid #f1c40f;
       border-bottom: 8px solid #f1c40f; }
-      /* line 465, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 550, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.prigrizek-article span.glyphicon {
         border: 8px solid #f1c40f;
         color: #f1c40f; }
-      /* line 470, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 555, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article.prigrizek-article .post-read-more a {
         border: 4px solid #f1c40f;
         color: #f1c40f; }
-        /* line 473, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 558, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article.prigrizek-article .post-read-more a:hover {
           background-color: #f1c40f;
           color: #ecf0f1;
           text-decoration: none; }
-    /* line 481, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 566, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article small {
       text-align: center;
       font-style: italic;
       display: block;
       margin: 0 auto; }
-      /* line 486, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 571, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article small ul {
         margin: 0;
         padding: 0; }
-        /* line 489, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 574, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article small ul li {
           display: inline;
           text-decoration: none;
           border-right: 1px solid #ccc;
           padding-right: 5px; }
-          /* line 494, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 579, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           section article small ul li:last-child {
             border-right: none;
             padding-right: 0; }
-          /* line 498, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+          /* line 583, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
           section article small ul li a {
             color: #ccc;
             font-style: normal; }
-      /* line 504, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 589, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article small span.content-author {
         font-weight: bold;
         font-style: normal; }
-    /* line 509, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 594, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article p {
       text-align: justify; }
-    /* line 512, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 597, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     section article .post-image-wrap {
       width: 100%;
       height: 20vh;
       overflow: hidden;
       margin-top: -30px; }
-      /* line 517, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 602, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       section article .post-image-wrap .post-image {
         width: 100%;
         height: 20vh;
@@ -567,7 +660,7 @@ section {
         -ms-transition: 200ms, ease, all;
         -o-transition: 200ms, ease, all;
         transition: 200ms, ease, all; }
-        /* line 523, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+        /* line 608, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
         section article .post-image-wrap .post-image:hover {
           -webkit-filter: grayscale(70%);
           -moz-filter: grayscale(70%);
@@ -581,7 +674,7 @@ section {
           transform: scale(1.1); }
 
 /* FOOTER STYLES */
-/* line 533, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+/* line 618, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
 footer {
   background-color: #2c3e50;
   min-height: 30vh;
@@ -590,13 +683,13 @@ footer {
   -ms-box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.6) inset;
   -o-box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.6) inset;
   box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.6) inset; }
-  /* line 537, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+  /* line 622, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
   footer p {
     text-align: center;
     color: #ecf0f1;
     font-size: 1.3em;
     margin-top: 12vh; }
-    /* line 542, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+    /* line 627, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
     footer p span {
       font-size: 2em;
       color: #ecf0f1;
@@ -606,7 +699,7 @@ footer {
       position: relative;
       margin-top: 5%;
       animation: bounce 2s infinite; }
-      /* line 551, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
+      /* line 636, /Applications/MAMP/htdocs/wordpress/wp-content/themes/CustomTheme/CSS/main.scss */
       footer p span:hover {
         cursor: pointer; }
 
