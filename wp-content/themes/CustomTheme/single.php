@@ -1,10 +1,10 @@
 <?php
   get_header();
-?>  
+?>
 
 <section class="container">
 <div class="row">
-<?php if(have_posts()): 
+<?php if(have_posts()):
     while(have_posts()): the_post(); ?>
       <article id="post-<?php the_ID(); ?>" class="single-article">
 <!--    <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>-->
@@ -21,7 +21,7 @@
               <div class="avatar">
                 <?php echo get_avatar(get_the_author_meta('ID')); ?>
               </div>
-              Posted on: <?php the_time('j F Y')?> @ <?php the_time('G:i'); ?><br> Published By: 
+              Posted on: <?php the_time('j F Y')?> @ <?php the_time('G:i'); ?><br> Published By:
               <span class="content-author">
                 <?php the_author(); ?>
               </span>
@@ -43,7 +43,7 @@
               <?php
               } ?>
               <p class="text-center"><strong>Težavnost:<br></strong>
-              <?php 
+              <?php
                 $key = "Tezavnost";
                 $values = get_post_custom_values($key);
                 foreach($values as $key=>$value){
@@ -84,7 +84,7 @@
     -->
       </article>
 
-            
+
 
 
     <?php endwhile;
