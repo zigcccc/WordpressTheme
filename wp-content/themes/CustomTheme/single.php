@@ -65,7 +65,24 @@
             <div class="content">
               <?php the_content(); ?>
             </div>
-          </div><!-- END col 10 -->
+          </div><!-- END col 8 -->
+          <div class="col-sm-2">
+            <div class="tags">
+              <?php edit_post_link(); ?>
+            </div>
+          </div><!-- END col 2 -->
+        </div><!-- END row -->
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div id="comments-area">
+              <h3>Komentarji:</h3>
+              <?php if (comments_open()) {
+                comments_template();
+              }else {
+                echo '<h4 class="text-center">Sorry comments are closed!</h4>';
+              } ?>
+            </div><!--END comments-area -->
+          </div><!-- END col 8 -->
         </div><!-- END row -->
 
         <button class="btn btn-success"><a href="/wordpress/recepti/">Nazaj na recepte</a></button>
